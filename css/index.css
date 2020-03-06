@@ -1,1 +1,308 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* STYLES BEGIN HERE */
+body {
+  margin: 0%;
+  padding: 0% 20%;
+}
+@media (max-width: 500px) {
+  body {
+    padding: 0%;
+  }
+}
+nav {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1%;
+  border: 2px solid;
+  background-color: lightgray;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: 10%;
+  justify-content: space-between;
+}
+.intro-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  background-color: orange;
+  border: 2px solid;
+  border-bottom: 0px solid;
+  border-top: 0px solid;
+  padding: 0.5%;
+  width: 100%;
+}
+.intro-section h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.intro-section h4 {
+  padding-top: 1%;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.intro-section p {
+  padding-top: 15%;
+  width: 80%;
+  line-height: 25px;
+  font-size: 20px;
+}
+.intro-section img {
+  width: 50%;
+  border: 1px solid;
+  border-radius: 15%;
+}
+@media (max-width: 500px) {
+  .intro-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.body-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .body-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.skills-section {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1%;
+  width: 50%;
+  border-left: 2px solid;
+}
+@media (max-width: 500px) {
+  .skills-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.skills-section h3 {
+  font-size: 25px;
+  text-decoration: underline;
+  padding: 5px;
+}
+.skills-section li {
+  list-style: square;
+  list-style-position: inside;
+  padding: 5px;
+}
+.work-history-section {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border: 2px solid;
+  background-color: lightgray;
+}
+@media (max-width: 500px) {
+  .work-history-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.work-history-section h3 {
+  font-size: 25px;
+  text-decoration: underline;
+  padding: 15px;
+  align-items: center;
+}
+.work-history-section tr {
+  padding: 5px;
+}
+.work-history-section th {
+  border: 1px solid;
+  padding: 5px 10px;
+}
+.work-history-section .table-row-1 {
+  background-color: orange;
+}
+.work-history-section .table-row-2 {
+  font-weight: bold;
+}
+.contact-section {
+  border: 2px solid;
+  border-top: 0px solid;
+  border-bottom: 0px solid;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2%;
+  background-color: orange;
+}
+@media (max-width: 500px) {
+  .contact-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contact-section h3 {
+  font-size: 25px;
+  text-decoration: underline;
+  padding: 5px;
+}
+.contact-section p {
+  padding: 5px;
+}
+footer p {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
